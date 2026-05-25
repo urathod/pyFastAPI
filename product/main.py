@@ -6,7 +6,7 @@ from .database import engine, SessionLocal, Base
 from .database import get_db
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
-from .routers import product, seller
+from .routers import product, seller, login
 
 app = FastAPI(
     title="Product API",
@@ -26,6 +26,7 @@ app = FastAPI(
 
 app.include_router(product.router)
 app.include_router(seller.router)
+app.include_router(login.router)
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
