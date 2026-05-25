@@ -98,3 +98,18 @@ curl -X POST http://127.0.0.1:8000/products/ \
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+This was for learning how to use FastAPI, Python ORM SQLAlchemy, SQLite, JWT and OAuth2.0 authentication using Udemy course: The Complete FastAPI Course with OAuth and JWT Authentication by Ashutosh Pawar https://jpmc.udemy.com/course/fastapi-course-python/ 
+
+How to run this project after git clone:
+
+Ensure you have Python 3.6 or higher
+
+Create virtual environment using:
+   python3 -m venv env 
+Activate env using:
+   . env/bin/activate env   
+Download python packages
+   pip install -r requirements.txt 
+Run the app build in product directory using:
+   uvicorn product.main:app --reload
